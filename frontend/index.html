@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brrrgrrr - Customize Your Burger</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>BRRRGRRR</h1>
+        </header>
+        <main>
+            <div class="choose-type">
+                <h2>Choose Burger Type</h2>
+                <button id="choose-veg">Veg</button>
+                <button id="choose-non-veg">Non-Veg</button>
+            </div>
+            <div class="ingredients hidden">
+                <h2>Choose Your Ingredients</h2>
+                <div class="ingredient-section">
+                    <h3>Patties</h3>
+                    <div class="ingredient-buttons" id="patties"></div>
+                </div>
+                <div class="ingredient-section hidden" id="cheese-section">
+                    <h3>Cheeses</h3>
+                    <div class="ingredient-buttons" id="cheeses"></div>
+                </div>
+                <div class="ingredient-section hidden" id="vegetable-section">
+                    <h3>Vegetables</h3>
+                    <div class="ingredient-buttons" id="vegetables"></div>
+                </div>
+                <div class="ingredient-section hidden" id="condiment-section">
+                    <h3>Sauces and Condiments</h3>
+                    <div class="ingredient-buttons" id="condiments"></div>
+                </div>
+                <button id="previous-step" class="hidden">Back</button>
+                <button id="next-step" class="hidden">Next</button>
+                <ul id="selected-ingredient-list"></ul>
+            </div>
+            <div class="order-summary hidden">
+                <h2>Your Ingredients</h2>
+                <ul id="ingredient-list"></ul>
+                <div class="total">
+                    <span>Current Order Total: </span><span id="order-total">INR 0</span>
+                </div>
+                <button id="place-order">Pay and Receive Order</button>
+            </div>
+            <div class="bill hidden">
+                <h2>Your Bill</h2>
+                <ul id="bill-list"></ul>
+                <div class="total">
+                    <span>Total: </span><span id="bill-total">INR 0</span>
+                </div>
+                <button id="place-new-order">Place New Order</button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
